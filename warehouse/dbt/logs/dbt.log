@@ -1,0 +1,131 @@
+[0m12:37:48.236480 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78833fa586e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78833f258cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78833ecd3d90>]}
+
+
+============================== 12:37:48.240018 | 71dda82b-28d3-4a6a-85b2-258fcf355cb0 ==============================
+[0m12:37:48.240018 [info ] [MainThread]: Running with dbt=1.10.15
+[0m12:37:48.240612 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/home/kokomk/.dbt', 'debug': 'False', 'write_json': 'True', 'static_parser': 'True', 'quiet': 'False', 'log_path': 'logs', 'printer_width': '80', 'use_experimental_parser': 'False', 'invocation_command': 'dbt init pub_data_correlation', 'partial_parse': 'True', 'no_print': 'None', 'version_check': 'True', 'cache_selected_only': 'False', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'None', 'fail_fast': 'False', 'target_path': 'None', 'log_format': 'default', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'use_colors': 'True', 'warn_error': 'None'}
+[0m12:37:48.249802 [debug] [MainThread]: Starter project path: /home/kokomk/.pyenv/versions/3.13.11/envs/pg_dbt_demo/lib/python3.13/site-packages/dbt/include/starter_project
+[0m12:37:48.252295 [info ] [MainThread]: 
+Your new dbt project "pub_data_correlation" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:37:48.252687 [info ] [MainThread]: Setting up your profile.
+[0m12:40:10.554701 [info ] [MainThread]: Profile pub_data_correlation written to /home/kokomk/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m12:40:10.557915 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 142.38766, "process_in_blocks": "1392", "process_kernel_time": 1.8674, "process_mem_max_rss": "368188", "process_out_blocks": "80", "process_user_time": 7.102186}
+[0m12:40:10.560627 [debug] [MainThread]: Command `dbt init` succeeded at 12:40:10.560163 after 142.39 seconds
+[0m12:40:10.562229 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78833d5ec640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78833d5afd10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78833d78fce0>]}
+[0m12:40:10.563954 [debug] [MainThread]: Flushing usage events
+[0m12:40:10.795537 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:40:29.739563 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79f1c35546e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79f1c2d58cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79f1c27cfd90>]}
+
+
+============================== 12:40:29.742946 | 08416b47-6793-4dd1-b166-30dfde50f010 ==============================
+[0m12:40:29.742946 [info ] [MainThread]: Running with dbt=1.10.15
+[0m12:40:29.743491 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'indirect_selection': 'eager', 'debug': 'False', 'introspect': 'True', 'printer_width': '80', 'version_check': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/home/kokomk/.dbt', 'partial_parse': 'True', 'fail_fast': 'False', 'empty': 'None', 'warn_error': 'None', 'write_json': 'True', 'log_cache_events': 'False', 'static_parser': 'True', 'log_path': 'logs', 'invocation_command': 'dbt debug', 'quiet': 'False'}
+[0m12:40:29.754169 [info ] [MainThread]: dbt version: 1.10.15
+[0m12:40:29.754681 [info ] [MainThread]: python version: 3.13.11
+[0m12:40:29.755049 [info ] [MainThread]: python path: /home/kokomk/.pyenv/versions/3.13.11/envs/pg_dbt_demo/bin/python
+[0m12:40:29.755387 [info ] [MainThread]: os info: Linux-6.8.0-87-generic-x86_64-with-glibc2.35
+[0m12:40:38.065599 [info ] [MainThread]: Using profiles dir at /home/kokomk/.dbt
+[0m12:40:38.066070 [info ] [MainThread]: Using profiles.yml file at /home/kokomk/.dbt/profiles.yml
+[0m12:40:38.066412 [info ] [MainThread]: Using dbt_project.yml file at /home/kokomk/Projects/gcp-public-data-correlation/warehouse/dbt/dbt_project.yml
+[0m12:40:38.066814 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m12:40:38.067418 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 8.393902, "process_in_blocks": "11600", "process_kernel_time": 2.76772, "process_mem_max_rss": "373588", "process_out_blocks": "16", "process_user_time": 7.613717}
+[0m12:40:38.068072 [debug] [MainThread]: Command `dbt debug` failed at 12:40:38.067960 after 8.39 seconds
+[0m12:40:38.068461 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79f1bedb5940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79f1bed6bbf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79f1bed24d10>]}
+[0m12:40:38.068880 [debug] [MainThread]: Flushing usage events
+[0m12:40:38.206204 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:30:13.871447 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x757296c5c6e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x757296460cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x757295ed7d90>]}
+
+
+============================== 16:30:13.876731 | bee95d70-6223-4c56-bb39-3e715e6d4ea5 ==============================
+[0m16:30:13.876731 [info ] [MainThread]: Running with dbt=1.10.15
+[0m16:30:13.878027 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/home/kokomk/.dbt', 'target_path': 'None', 'use_experimental_parser': 'False', 'warn_error': 'None', 'invocation_command': 'dbt debug', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'logs', 'quiet': 'False', 'partial_parse': 'True', 'debug': 'False', 'static_parser': 'True', 'indirect_selection': 'eager', 'log_format': 'default', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'version_check': 'True', 'empty': 'None', 'write_json': 'True', 'use_colors': 'True', 'introspect': 'True', 'printer_width': '80'}
+[0m16:30:13.893993 [info ] [MainThread]: dbt version: 1.10.15
+[0m16:30:13.895290 [info ] [MainThread]: python version: 3.13.11
+[0m16:30:13.895898 [info ] [MainThread]: python path: /home/kokomk/.pyenv/versions/3.13.11/envs/pg_dbt_demo/bin/python
+[0m16:30:13.896489 [info ] [MainThread]: os info: Linux-6.8.0-87-generic-x86_64-with-glibc2.35
+[0m16:30:13.898497 [info ] [MainThread]: target not specified in profile 'dbt_elt_demo', using 'default'
+[0m16:30:26.696637 [info ] [MainThread]: Using profiles dir at /home/kokomk/.dbt
+[0m16:30:26.697349 [info ] [MainThread]: Using profiles.yml file at /home/kokomk/.dbt/profiles.yml
+[0m16:30:26.697808 [info ] [MainThread]: Using dbt_project.yml file at /home/kokomk/Projects/gcp-public-data-correlation/warehouse/dbt/dbt_project.yml
+[0m16:30:26.698321 [info ] [MainThread]: Configuration:
+[0m16:30:26.698780 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m16:30:26.699237 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m16:30:26.699721 [info ] [MainThread]: Required dependencies:
+[0m16:30:26.700233 [debug] [MainThread]: Executing "git --help"
+[0m16:30:26.703495 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:30:26.704414 [debug] [MainThread]: STDERR: "b''"
+[0m16:30:26.704968 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:30:26.705474 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m16:30:26.706023 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m16:30:26.706472 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  The profile 'dbt_elt_demo' does not have a target named 'default'. The valid target names for this profile are:
+   - dev
+
+
+[0m16:30:26.706938 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/kokomk/Projects/gcp-public-data-correlation/warehouse/dbt/dbt_project.yml> not found
+
+[0m16:30:26.707805 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 12.950351, "process_in_blocks": "9016", "process_kernel_time": 3.899726, "process_mem_max_rss": "368472", "process_out_blocks": "24", "process_user_time": 12.03463}
+[0m16:30:26.708943 [debug] [MainThread]: Command `dbt debug` failed at 16:30:26.708717 after 12.95 seconds
+[0m16:30:26.709491 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7572948deea0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7572949c3d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75729476ff00>]}
+[0m16:30:26.710048 [debug] [MainThread]: Flushing usage events
+[0m16:30:26.900339 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:30:57.674398 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7837c1aa1f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7837c32a3cb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7837c1048380>]}
+
+
+============================== 16:30:57.680723 | 41dd6314-41a5-4aef-9672-56ee76ff124d ==============================
+[0m16:30:57.680723 [info ] [MainThread]: Running with dbt=1.11.2
+[0m16:30:57.681532 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'profiles_dir': '/home/kokomk/.dbt', 'write_json': 'True', 'debug': 'False', 'cache_selected_only': 'False', 'empty': 'None', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'version_check': 'True', 'invocation_command': 'dbt debug', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'printer_width': '80', 'introspect': 'True', 'log_cache_events': 'False', 'warn_error': 'None', 'log_format': 'default', 'no_print': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs', 'target_path': 'None'}
+[0m16:30:57.697127 [info ] [MainThread]: dbt version: 1.11.2
+[0m16:30:57.697796 [info ] [MainThread]: python version: 3.12.10
+[0m16:30:57.698341 [info ] [MainThread]: python path: /home/kokomk/.pyenv/versions/3.12.10/envs/dbt-gcp/bin/python
+[0m16:30:57.698856 [info ] [MainThread]: os info: Linux-6.8.0-87-generic-x86_64-with-glibc2.35
+[0m16:30:57.700611 [info ] [MainThread]: target not specified in profile 'dbt_elt_demo', using 'default'
+[0m16:31:10.885696 [info ] [MainThread]: Using profiles dir at /home/kokomk/.dbt
+[0m16:31:10.886660 [info ] [MainThread]: Using profiles.yml file at /home/kokomk/.dbt/profiles.yml
+[0m16:31:10.888050 [info ] [MainThread]: Using dbt_project.yml file at /home/kokomk/Projects/gcp-public-data-correlation/warehouse/dbt/dbt_project.yml
+[0m16:31:10.888678 [info ] [MainThread]: Configuration:
+[0m16:31:10.889240 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m16:31:10.889683 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m16:31:10.890130 [info ] [MainThread]: Required dependencies:
+[0m16:31:10.890652 [debug] [MainThread]: Executing "git --help"
+[0m16:31:10.893584 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:31:10.894257 [debug] [MainThread]: STDERR: "b''"
+[0m16:31:10.895037 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:31:10.896105 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m16:31:10.897028 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m16:31:10.897635 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  The profile 'dbt_elt_demo' does not have a target named 'default'. The valid target names for this profile are:
+   - dev
+
+
+[0m16:31:10.898168 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/kokomk/Projects/gcp-public-data-correlation/warehouse/dbt/dbt_project.yml> not found
+
+[0m16:31:10.899244 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 13.333202, "process_in_blocks": "2056", "process_kernel_time": 3.837972, "process_mem_max_rss": "371404", "process_out_blocks": "24", "process_user_time": 12.653672}
+[0m16:31:10.900777 [debug] [MainThread]: Command `dbt debug` failed at 16:31:10.900559 after 13.34 seconds
+[0m16:31:10.901449 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7837c0fdb560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7837946d0500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7837945fe720>]}
+[0m16:31:10.902035 [debug] [MainThread]: Flushing usage events
+[0m16:31:11.091966 [debug] [MainThread]: An error was encountered while trying to flush usage events

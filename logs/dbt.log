@@ -1,0 +1,63 @@
+[0m12:45:43.230651 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7233c7a3c6e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7233c7240cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7233c6cb7d90>]}
+
+
+============================== 12:45:43.234246 | a2fdb864-b333-4714-89df-116a7183cbf4 ==============================
+[0m12:45:43.234246 [info ] [MainThread]: Running with dbt=1.10.15
+[0m12:45:43.234847 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'profiles_dir': '/home/kokomk/.dbt', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'use_experimental_parser': 'False', 'printer_width': '80', 'target_path': 'None', 'static_parser': 'True', 'empty': 'None', 'log_path': 'logs', 'quiet': 'False', 'no_print': 'None', 'write_json': 'True', 'log_format': 'default', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'warn_error': 'None', 'version_check': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'fail_fast': 'False', 'indirect_selection': 'eager'}
+[0m12:45:43.247374 [info ] [MainThread]: dbt version: 1.10.15
+[0m12:45:43.248141 [info ] [MainThread]: python version: 3.13.11
+[0m12:45:43.248811 [info ] [MainThread]: python path: /home/kokomk/.pyenv/versions/3.13.11/envs/pg_dbt_demo/bin/python
+[0m12:45:43.249518 [info ] [MainThread]: os info: Linux-6.8.0-87-generic-x86_64-with-glibc2.35
+[0m12:45:54.349248 [info ] [MainThread]: Using profiles dir at /home/kokomk/.dbt
+[0m12:45:54.349898 [info ] [MainThread]: Using profiles.yml file at /home/kokomk/.dbt/profiles.yml
+[0m12:45:54.350436 [info ] [MainThread]: Using dbt_project.yml file at /home/kokomk/Projects/gcp-public-data-correlation/dbt_project.yml
+[0m12:45:54.351033 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m12:45:54.351828 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 11.192152, "process_in_blocks": "0", "process_kernel_time": 3.595338, "process_mem_max_rss": "373696", "process_out_blocks": "16", "process_user_time": 10.420941}
+[0m12:45:54.353658 [debug] [MainThread]: Command `dbt debug` failed at 12:45:54.353389 after 11.19 seconds
+[0m12:45:54.354520 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x723398815940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7233987fbbf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x723398834d10>]}
+[0m12:45:54.355565 [debug] [MainThread]: Flushing usage events
+[0m12:45:54.600744 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:02:18.357132 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aab12b92f60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aab128f2270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aab12b92e70>]}
+
+
+============================== 13:02:18.364721 | bfb41d39-25e7-45e1-a018-5a3f7cc13591 ==============================
+[0m13:02:18.364721 [info ] [MainThread]: Running with dbt=1.11.2
+[0m13:02:18.365576 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'write_json': 'True', 'no_print': 'None', 'fail_fast': 'False', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/home/kokomk/.dbt', 'introspect': 'True', 'use_colors': 'True', 'debug': 'False', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'log_path': 'logs', 'empty': 'None', 'log_cache_events': 'False', 'version_check': 'True', 'printer_width': '80', 'indirect_selection': 'eager', 'log_format': 'default', 'static_parser': 'True', 'quiet': 'False', 'cache_selected_only': 'False'}
+[0m13:02:18.386674 [info ] [MainThread]: dbt version: 1.11.2
+[0m13:02:18.388558 [info ] [MainThread]: python version: 3.12.10
+[0m13:02:18.390200 [info ] [MainThread]: python path: /home/kokomk/.pyenv/versions/3.12.10/envs/dbt-gcp/bin/python
+[0m13:02:18.391656 [info ] [MainThread]: os info: Linux-6.8.0-87-generic-x86_64-with-glibc2.35
+[0m13:02:32.525558 [info ] [MainThread]: Using profiles dir at /home/kokomk/.dbt
+[0m13:02:32.526334 [info ] [MainThread]: Using profiles.yml file at /home/kokomk/.dbt/profiles.yml
+[0m13:02:32.528024 [info ] [MainThread]: Using dbt_project.yml file at /home/kokomk/Projects/gcp-public-data-correlation/dbt_project.yml
+[0m13:02:32.529045 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m13:02:32.530563 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 14.295979, "process_in_blocks": "0", "process_kernel_time": 4.197751, "process_mem_max_rss": "375952", "process_out_blocks": "16", "process_user_time": 13.57336}
+[0m13:02:32.531905 [debug] [MainThread]: Command `dbt debug` failed at 13:02:32.531667 after 14.30 seconds
+[0m13:02:32.532541 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aab1325c380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aaae463f140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aaae4795310>]}
+[0m13:02:32.533175 [debug] [MainThread]: Flushing usage events
+[0m13:02:32.720296 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:06:43.818956 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x786aa1941280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x786aa2354380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x786aa256f440>]}
+
+
+============================== 13:06:43.825917 | 8418ccdb-e7fa-40d2-8a6f-51350ee4657e ==============================
+[0m13:06:43.825917 [info ] [MainThread]: Running with dbt=1.11.2
+[0m13:06:43.827320 [debug] [MainThread]: running dbt with arguments {'log_path': 'logs', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'use_colors': 'True', 'profiles_dir': '/home/kokomk/.dbt', 'empty': 'None', 'introspect': 'True', 'partial_parse': 'True', 'no_print': 'None', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'log_format': 'default', 'log_cache_events': 'False', 'target_path': 'None', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'quiet': 'False', 'invocation_command': 'dbt debug', 'printer_width': '80', 'debug': 'False', 'static_parser': 'True'}
+[0m13:06:43.846482 [info ] [MainThread]: dbt version: 1.11.2
+[0m13:06:43.847105 [info ] [MainThread]: python version: 3.12.10
+[0m13:06:43.848152 [info ] [MainThread]: python path: /home/kokomk/.pyenv/versions/3.12.10/envs/dbt-gcp/bin/python
+[0m13:06:43.849643 [info ] [MainThread]: os info: Linux-6.8.0-87-generic-x86_64-with-glibc2.35
+[0m13:06:57.294045 [info ] [MainThread]: Using profiles dir at /home/kokomk/.dbt
+[0m13:06:57.294747 [info ] [MainThread]: Using profiles.yml file at /home/kokomk/.dbt/profiles.yml
+[0m13:06:57.295309 [info ] [MainThread]: Using dbt_project.yml file at /home/kokomk/Projects/gcp-public-data-correlation/dbt_project.yml
+[0m13:06:57.295925 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m13:06:57.296701 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 13.590641, "process_in_blocks": "0", "process_kernel_time": 4.173397, "process_mem_max_rss": "375612", "process_out_blocks": "16", "process_user_time": 12.620124}
+[0m13:06:57.297780 [debug] [MainThread]: Command `dbt debug` failed at 13:06:57.297576 after 13.59 seconds
+[0m13:06:57.299380 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x786aa1f78dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x786a73c7be60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x786a73ec5c40>]}
+[0m13:06:57.300624 [debug] [MainThread]: Flushing usage events
+[0m13:06:57.507607 [debug] [MainThread]: An error was encountered while trying to flush usage events
